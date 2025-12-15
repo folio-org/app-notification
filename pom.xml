@@ -6,7 +6,7 @@
   <artifactId>app-notification</artifactId>
   <groupId>org.folio</groupId>
   <description>Notification Application</description>
-  <version>1.0.0</version>
+  <version>1.0.0-SNAPSHOT</version>
 
   <properties>
     <project.name>app-notification</project.name>
