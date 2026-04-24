@@ -6,39 +6,39 @@
   "dependencies": [
     {
       "name": "app-platform-minimal",
-      "version": "^VERSION_^2.1.0-SNAPSHOT",
+      "version": "~2.1.0",
       "preRelease": "false"
     }
   ],
   "modules": [
     {
       "name": "mod-batch-print",
-      "version": "^VERSION_latest",
+      "version": "~1.4.0",
       "preRelease": "false"
     },
     {
       "name": "mod-email",
-      "version": "^VERSION_latest",
+      "version": "~1.20.0",
       "preRelease": "false"
     },
     {
       "name": "mod-event-config",
-      "version": "^VERSION_latest",
+      "version": "~2.10.0",
       "preRelease": "false"
     },
     {
       "name": "mod-notify",
-      "version": "^VERSION_latest",
+      "version": "~3.5.0",
       "preRelease": "false"
     },
     {
       "name": "mod-sender",
-      "version": "^VERSION_latest",
+      "version": "~1.15.0",
       "preRelease": "false"
     },
     {
       "name": "mod-template-engine",
-      "version": "^VERSION_latest",
+      "version": "~1.23.0",
       "preRelease": "false"
     }
   ]
