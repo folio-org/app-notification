@@ -1,16 +1,20 @@
 {
-  "id" : "app-notification-1.1.0-SNAPSHOT.100200000006853",
+  "id" : "app-notification-1.1.0-SNAPSHOT.100200000006889",
   "name" : "app-notification",
-  "version" : "1.1.0-SNAPSHOT.100200000006853",
+  "version" : "1.1.0-SNAPSHOT.100200000006889",
   "description" : "Notification Application",
   "modules" : [ {
-    "id" : "mod-email-1.21.0-SNAPSHOT.2056",
-    "name" : "mod-email",
-    "version" : "1.21.0-SNAPSHOT.2056"
+    "id" : "mod-sender-1.16.0-SNAPSHOT.2031",
+    "name" : "mod-sender",
+    "version" : "1.16.0-SNAPSHOT.2031"
   }, {
     "id" : "mod-batch-print-1.4.1-SNAPSHOT.2015",
     "name" : "mod-batch-print",
     "version" : "1.4.1-SNAPSHOT.2015"
+  }, {
+    "id" : "mod-email-1.21.0-SNAPSHOT.2056",
+    "name" : "mod-email",
+    "version" : "1.21.0-SNAPSHOT.2056"
   }, {
     "id" : "mod-event-config-2.11.0-SNAPSHOT.2014",
     "name" : "mod-event-config",
@@ -19,10 +23,6 @@
     "id" : "mod-notify-3.6.0-SNAPSHOT.2019",
     "name" : "mod-notify",
     "version" : "3.6.0-SNAPSHOT.2019"
-  }, {
-    "id" : "mod-sender-1.16.0-SNAPSHOT.2017",
-    "name" : "mod-sender",
-    "version" : "1.16.0-SNAPSHOT.2017"
   }, {
     "id" : "mod-template-engine-1.24.0-SNAPSHOT.2030",
     "name" : "mod-template-engine",
@@ -686,7 +686,7 @@
       }
     }
   }, {
-    "id" : "mod-sender-1.16.0-SNAPSHOT.2017",
+    "id" : "mod-sender-1.16.0-SNAPSHOT.2031",
     "name" : "Mod sender",
     "requires" : [ {
       "id" : "users",
@@ -705,8 +705,12 @@
         "methods" : [ "POST" ],
         "pathPattern" : "/message-delivery",
         "permissionsRequired" : [ "sender.message-delivery.post" ],
-        "modulePermissions" : [ "email.message.post", "batch-print.entries.mail.post", "users.item.get" ]
+        "modulePermissions" : [ "email.message.post", "batch-print.entries.mail.post", "users.item.get", "text-notify.message.post" ]
       } ]
+    } ],
+    "optional" : [ {
+      "id" : "text-notify",
+      "version" : "1.0"
     } ],
     "permissionSets" : [ {
       "permissionName" : "sender.message-delivery.post",
@@ -715,7 +719,7 @@
       "description" : "Send message"
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-sender:1.16.0-SNAPSHOT.2017",
+      "dockerImage" : "folioci/mod-sender:1.16.0-SNAPSHOT.2031",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
