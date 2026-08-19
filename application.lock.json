@@ -1,12 +1,12 @@
 {
-  "id" : "app-notification-1.1.0-SNAPSHOT.100200000006889",
+  "id" : "app-notification-1.1.0-SNAPSHOT.100200000007212",
   "name" : "app-notification",
-  "version" : "1.1.0-SNAPSHOT.100200000006889",
+  "version" : "1.1.0-SNAPSHOT.100200000007212",
   "description" : "Notification Application",
   "modules" : [ {
-    "id" : "mod-sender-1.16.0-SNAPSHOT.2031",
-    "name" : "mod-sender",
-    "version" : "1.16.0-SNAPSHOT.2031"
+    "id" : "mod-template-engine-1.24.0-SNAPSHOT.2035",
+    "name" : "mod-template-engine",
+    "version" : "1.24.0-SNAPSHOT.2035"
   }, {
     "id" : "mod-batch-print-1.4.1-SNAPSHOT.2015",
     "name" : "mod-batch-print",
@@ -24,9 +24,9 @@
     "name" : "mod-notify",
     "version" : "3.6.0-SNAPSHOT.2019"
   }, {
-    "id" : "mod-template-engine-1.24.0-SNAPSHOT.2030",
-    "name" : "mod-template-engine",
-    "version" : "1.24.0-SNAPSHOT.2030"
+    "id" : "mod-sender-1.16.0-SNAPSHOT.2031",
+    "name" : "mod-sender",
+    "version" : "1.16.0-SNAPSHOT.2031"
   } ],
   "uiModules" : [ ],
   "dependencies" : [ {
@@ -737,7 +737,7 @@
       }
     }
   }, {
-    "id" : "mod-template-engine-1.24.0-SNAPSHOT.2030",
+    "id" : "mod-template-engine-1.24.0-SNAPSHOT.2035",
     "name" : "Template engine module",
     "requires" : [ {
       "id" : "locale",
@@ -830,7 +830,7 @@
       "visible" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-template-engine:1.24.0-SNAPSHOT.2030",
+      "dockerImage" : "folioci/mod-template-engine:1.24.0-SNAPSHOT.2035",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
