@@ -1,16 +1,12 @@
 {
-  "id" : "app-notification-1.1.0-SNAPSHOT.100200000007245",
+  "id" : "app-notification-1.1.0-SNAPSHOT.100200000007437",
   "name" : "app-notification",
-  "version" : "1.1.0-SNAPSHOT.100200000007245",
+  "version" : "1.1.0-SNAPSHOT.100200000007437",
   "description" : "Notification Application",
   "modules" : [ {
-    "id" : "mod-event-config-2.11.0-SNAPSHOT.2027",
-    "name" : "mod-event-config",
-    "version" : "2.11.0-SNAPSHOT.2027"
-  }, {
-    "id" : "mod-notify-3.6.0-SNAPSHOT.2030",
+    "id" : "mod-notify-3.6.0-SNAPSHOT.2039",
     "name" : "mod-notify",
-    "version" : "3.6.0-SNAPSHOT.2030"
+    "version" : "3.6.0-SNAPSHOT.2039"
   }, {
     "id" : "mod-batch-print-1.4.1-SNAPSHOT.2015",
     "name" : "mod-batch-print",
@@ -19,6 +15,10 @@
     "id" : "mod-email-1.21.0-SNAPSHOT.2056",
     "name" : "mod-email",
     "version" : "1.21.0-SNAPSHOT.2056"
+  }, {
+    "id" : "mod-event-config-2.11.0-SNAPSHOT.2027",
+    "name" : "mod-event-config",
+    "version" : "2.11.0-SNAPSHOT.2027"
   }, {
     "id" : "mod-sender-1.16.0-SNAPSHOT.2031",
     "name" : "mod-sender",
@@ -509,7 +509,7 @@
       }
     }
   }, {
-    "id" : "mod-notify-3.6.0-SNAPSHOT.2030",
+    "id" : "mod-notify-3.6.0-SNAPSHOT.2039",
     "name" : "Notify",
     "requires" : [ {
       "id" : "users",
@@ -563,7 +563,7 @@
       } ]
     }, {
       "id" : "patron-notice",
-      "version" : "1.1",
+      "version" : "1.2",
       "handlers" : [ {
         "methods" : [ "POST" ],
         "pathPattern" : "/patron-notice",
@@ -644,7 +644,7 @@
       "visible" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-notify:3.6.0-SNAPSHOT.2030",
+      "dockerImage" : "folioci/mod-notify:3.6.0-SNAPSHOT.2039",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
