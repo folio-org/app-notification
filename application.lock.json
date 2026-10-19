@@ -1,20 +1,20 @@
 {
-  "id" : "app-notification-1.1.0-SNAPSHOT.100200000007628",
+  "id" : "app-notification-1.1.0-SNAPSHOT.100200000007751",
   "name" : "app-notification",
-  "version" : "1.1.0-SNAPSHOT.100200000007628",
+  "version" : "1.1.0-SNAPSHOT.100200000007751",
   "description" : "Notification Application",
   "modules" : [ {
-    "id" : "mod-template-engine-1.24.0-SNAPSHOT.2054",
+    "id" : "mod-email-1.21.0-SNAPSHOT.2061",
+    "name" : "mod-email",
+    "version" : "1.21.0-SNAPSHOT.2061"
+  }, {
+    "id" : "mod-template-engine-1.24.0-SNAPSHOT.2061",
     "name" : "mod-template-engine",
-    "version" : "1.24.0-SNAPSHOT.2054"
+    "version" : "1.24.0-SNAPSHOT.2061"
   }, {
     "id" : "mod-batch-print-1.4.1-SNAPSHOT.2015",
     "name" : "mod-batch-print",
     "version" : "1.4.1-SNAPSHOT.2015"
-  }, {
-    "id" : "mod-email-1.21.0-SNAPSHOT.2056",
-    "name" : "mod-email",
-    "version" : "1.21.0-SNAPSHOT.2056"
   }, {
     "id" : "mod-event-config-2.11.0-SNAPSHOT.2027",
     "name" : "mod-event-config",
@@ -184,7 +184,7 @@
       }
     }
   }, {
-    "id" : "mod-email-1.21.0-SNAPSHOT.2056",
+    "id" : "mod-email-1.21.0-SNAPSHOT.2061",
     "name" : "email",
     "requires" : [ {
       "id" : "configuration",
@@ -358,7 +358,7 @@
       "subPermissions" : [ "email.settings.collection.get", "email.settings.item.get", "email.settings.item.post", "email.settings.item.put", "email.settings.item.delete" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-email:1.21.0-SNAPSHOT.2056",
+      "dockerImage" : "folioci/mod-email:1.21.0-SNAPSHOT.2061",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -737,7 +737,7 @@
       }
     }
   }, {
-    "id" : "mod-template-engine-1.24.0-SNAPSHOT.2054",
+    "id" : "mod-template-engine-1.24.0-SNAPSHOT.2061",
     "name" : "Template engine module",
     "requires" : [ {
       "id" : "locale",
@@ -830,7 +830,7 @@
       "visible" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-template-engine:1.24.0-SNAPSHOT.2054",
+      "dockerImage" : "folioci/mod-template-engine:1.24.0-SNAPSHOT.2061",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
