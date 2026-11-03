@@ -1,20 +1,16 @@
 {
-  "id" : "app-notification-1.1.0-SNAPSHOT.100200000007751",
+  "id" : "app-notification-1.1.0-SNAPSHOT.100200000007827",
   "name" : "app-notification",
-  "version" : "1.1.0-SNAPSHOT.100200000007751",
+  "version" : "1.1.0-SNAPSHOT.100200000007827",
   "description" : "Notification Application",
   "modules" : [ {
+    "id" : "mod-batch-print-1.4.1-SNAPSHOT.2027",
+    "name" : "mod-batch-print",
+    "version" : "1.4.1-SNAPSHOT.2027"
+  }, {
     "id" : "mod-email-1.21.0-SNAPSHOT.2061",
     "name" : "mod-email",
     "version" : "1.21.0-SNAPSHOT.2061"
-  }, {
-    "id" : "mod-template-engine-1.24.0-SNAPSHOT.2061",
-    "name" : "mod-template-engine",
-    "version" : "1.24.0-SNAPSHOT.2061"
-  }, {
-    "id" : "mod-batch-print-1.4.1-SNAPSHOT.2015",
-    "name" : "mod-batch-print",
-    "version" : "1.4.1-SNAPSHOT.2015"
   }, {
     "id" : "mod-event-config-2.11.0-SNAPSHOT.2027",
     "name" : "mod-event-config",
@@ -27,6 +23,10 @@
     "id" : "mod-sender-1.16.0-SNAPSHOT.2031",
     "name" : "mod-sender",
     "version" : "1.16.0-SNAPSHOT.2031"
+  }, {
+    "id" : "mod-template-engine-1.24.0-SNAPSHOT.2061",
+    "name" : "mod-template-engine",
+    "version" : "1.24.0-SNAPSHOT.2061"
   } ],
   "uiModules" : [ ],
   "dependencies" : [ {
@@ -35,7 +35,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-batch-print-1.4.1-SNAPSHOT.2015",
+    "id" : "mod-batch-print-1.4.1-SNAPSHOT.2027",
     "name" : "Batch printing",
     "requires" : [ ],
     "provides" : [ {
@@ -96,8 +96,8 @@
         "methods" : [ "POST" ],
         "pathPattern" : "/print/batch-creation",
         "schedule" : {
-          "zone" : "CET",
-          "cron" : "1 6 * * *"
+          "cron" : "1 6 * * *",
+          "zone" : "CET"
         },
         "modulePermissions" : [ "batch-print.print.write", "batch-print.print.read" ]
       } ]
@@ -148,7 +148,7 @@
       "subPermissions" : [ "batch-print.entries.item.post", "batch-print.entries.collection.get", "batch-print.entries.item.get", "batch-print.entries.item.put", "batch-print.entries.item.delete", "batch-print.entries.collection.delete", "batch-print.entries.mail.post", "batch-print.print.write", "batch-print.print.read" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-batch-print:1.4.1-SNAPSHOT.2015",
+      "dockerImage" : "folioci/mod-batch-print:1.4.1-SNAPSHOT.2027",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
